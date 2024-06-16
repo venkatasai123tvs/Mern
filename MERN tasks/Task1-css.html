@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1-CSS</title>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 2px;
+            background-color: mediumaquamarine; 
+            border: 1px solid #000; 
+            border-radius: 15px; 
+            margin-top: 40px;
+        }
+        th{
+            text-align: center;
+        }
+        td{
+            text-align: left;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #000; 
+            border-radius: 16px;
+        }
+        .shapes-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .shapes-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .shape-rectangle {
+            width: 100px;
+            height: 50px;
+            border: 3px solid #7dbd00;
+        }
+        .shape-rectangle1 {
+            width: 100px;
+            height: 50px;
+            border: 3px solid #7dbd00;
+            border-radius: 10px;
+        }
+        .shape-oval {
+            width: 100px;
+            height: 50px;
+            border: 3px solid #7dbd00;
+            border-radius: 50px/25px;
+        }
+        .shape {
+            width: 100px;
+            height: 50px;
+            border: 3px solid #7dbd00;
+            border-radius: 0 18px 0 18px;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 80%; margin-left: 10%;">
+        <tr>
+            <th>
+                Firstname
+            </th>
+            <th>
+                Lastname
+            </th>
+            <th>
+                Age
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Jill
+            </td>
+            <td>
+                Smith
+            </td>
+            <td>
+                50
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Eve
+            </td>
+            <td>
+                Jackson
+            </td>
+            <td>
+                94
+            </td>
+        </tr>
+        <tr>
+            <td>
+                John
+            </td>
+            <td>
+                Doe
+            </td>
+            <td>
+                80
+            </td>
+        </tr>
+    </table>
+    <div class="shapes-container">
+        <div class="shapes-row">
+            <div class="shape-rectangle"></div>
+            <div class="shape-rectangle"></div>
+            <div class="shape-rectangle1"></div>
+        </div>
+        <div class="shapes-row">
+            <div class="shape-rectangle1"></div>
+            <div class="shape-rectangle"></div>
+            <div class="shape-rectangle1"></div>
+        </div>
+        <div class="shapes-row">
+            <div class="shape-oval"></div>
+            <div class="shape-rectangle"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+</body>
+</html>
